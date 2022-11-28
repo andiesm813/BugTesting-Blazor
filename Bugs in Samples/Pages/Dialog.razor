@@ -1,7 +1,7 @@
 @page "/dialog"
 
 <div class="column-layout dialog-container">
-    <div class="row-layout group">
+    <div class="column-layout group">
         <IgbButton class="user-input" dialog-scope>
             DIALOG JUST BUTTONS
             <IgbRipple></IgbRipple>
@@ -10,6 +10,119 @@
             DIALOG WITH MIN WIDTH
             <IgbRipple></IgbRipple>
         </IgbButton>
+        <div class="row-layout group_1">
+            <IgbCard Outlined="true" class="card" dialog-scope>
+                <IgbCardMedia class="media-content" dialog-scope>
+                    <img src="assets/theme-light.svg" class="image" />
+                </IgbCardMedia>
+                <IgbCardHeader>
+                    <h3 slot="title">
+                        Cards purpose
+                    </h3>
+                    <h5 slot="subtitle">
+                        has issues
+                    </h5>
+                </IgbCardHeader>
+                <IgbCardActions class="actions-content" dialog-scope>
+                    <IgbButton Variant="ButtonVariant.Flat" class="user-input" dialog-scope>
+                        Button
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                    <IgbIconButton Variant="IconButtonVariant.Flat">
+                        <span class="material-icons">
+                            favorite
+                        </span>
+                        <IgbRipple></IgbRipple>
+                    </IgbIconButton>
+                    <IgbIconButton Variant="IconButtonVariant.Flat">
+                        <span class="material-icons">
+                            bookmark
+                        </span>
+                        <IgbRipple></IgbRipple>
+                    </IgbIconButton>
+                    <IgbIconButton Variant="IconButtonVariant.Flat">
+                        <span class="material-icons">
+                            share
+                        </span>
+                        <IgbRipple></IgbRipple>
+                    </IgbIconButton>
+                </IgbCardActions>
+            </IgbCard>
+            <IgbCard Outlined="true" class="card" dialog-scope>
+                <IgbCardMedia class="media-content" dialog-scope>
+                    <img src="assets/theme-dark.svg" class="image" />
+                </IgbCardMedia>
+                <IgbCardHeader>
+                    <h3 slot="title">
+                        Is to show how
+                    </h3>
+                    <h5 slot="subtitle">
+                        in web components
+                    </h5>
+                </IgbCardHeader>
+                <IgbCardActions class="actions-content" dialog-scope>
+                    <IgbButton Variant="ButtonVariant.Flat" class="user-input" dialog-scope>
+                        Button
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                    <IgbIconButton Variant="IconButtonVariant.Flat">
+                        <span class="material-icons">
+                            favorite
+                        </span>
+                        <IgbRipple></IgbRipple>
+                    </IgbIconButton>
+                    <IgbIconButton Variant="IconButtonVariant.Flat">
+                        <span class="material-icons">
+                            bookmark
+                        </span>
+                        <IgbRipple></IgbRipple>
+                    </IgbIconButton>
+                    <IgbIconButton Variant="IconButtonVariant.Flat">
+                        <span class="material-icons">
+                            share
+                        </span>
+                        <IgbRipple></IgbRipple>
+                    </IgbIconButton>
+                </IgbCardActions>
+            </IgbCard>
+            <IgbCard Outlined="true" class="card" dialog-scope>
+                <IgbCardMedia class="media-content" dialog-scope>
+                    <img src="assets/design system.png" class="image" />
+                </IgbCardMedia>
+                <IgbCardHeader>
+                    <h3 slot="title">
+                        The overlay
+                    </h3>
+                    <h5 slot="subtitle">
+                        when the app is generated
+                    </h5>
+                </IgbCardHeader>
+                <IgbCardActions class="actions-content" dialog-scope>
+                    <IgbButton Variant="ButtonVariant.Flat" class="user-input" dialog-scope>
+                        Button
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                    <IgbIconButton Variant="IconButtonVariant.Flat">
+                        <span class="material-icons">
+                            favorite
+                        </span>
+                        <IgbRipple></IgbRipple>
+                    </IgbIconButton>
+                    <IgbIconButton Variant="IconButtonVariant.Flat">
+                        <span class="material-icons">
+                            bookmark
+                        </span>
+                        <IgbRipple></IgbRipple>
+                    </IgbIconButton>
+                    <IgbIconButton Variant="IconButtonVariant.Flat">
+                        <span class="material-icons">
+                            share
+                        </span>
+                        <IgbRipple></IgbRipple>
+                    </IgbIconButton>
+                </IgbCardActions>
+            </IgbCard>
+        </div>
     </div>
     <span class="dialog-min-width">Dialog not yet available in Blazor</span>
     <span class="dialog-min-width">Dialog not yet available in Blazor</span>
