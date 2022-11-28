@@ -12,14 +12,6 @@
     display: flex;
 }
 .group {
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: flex-start;
-    position: relative;
-    min-width: 50px;
-    min-height: 50px;
-}
-.group_1 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -32,7 +24,7 @@
     flex-grow: 1;
     flex-basis: 0;
 }
-.group_2 {
+.group_1 {
     justify-content: flex-start;
     align-items: stretch;
     align-content: flex-start;
@@ -40,7 +32,7 @@
     position: relative;
     min-width: 50px;
 }
-.group_3 {
+.group_2 {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: stretch;
@@ -51,12 +43,12 @@
     min-height: 50px;
 }
 .card {
-    width: 320px;
     height: max-content;
-    min-width: 320px;
+    min-width: 240px;
+    max-width: 320px;
     flex-shrink: 0;
 }
-.group_4 {
+.group_3 {
     justify-content: flex-start;
     align-items: stretch;
     align-content: flex-start;
@@ -65,7 +57,7 @@
     min-width: 50px;
     min-height: 50px;
 }
-.group_5 {
+.group_4 {
     background-color: hsla(var(--ig-secondary-800));
     justify-content: flex-start;
     align-items: stretch;
@@ -76,7 +68,7 @@
     min-width: 50px;
     min-height: 50px;
 }
-.group_6 {
+.group_5 {
     justify-content: flex-start;
     align-items: stretch;
     align-content: flex-start;
@@ -84,8 +76,31 @@
     position: relative;
     min-width: 50px;
 }
-.default-dialog {
-    display: none;
+.group_6 {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    position: relative;
+    min-width: 50px;
+    min-height: 50px;
+}
+.button {
+    height: max-content;
+    min-width: min-content;
+    flex-shrink: 0;
+}
+.dropdown {
+    min-width: min-content;
+}
+.button_1 {
+    height: max-content;
+    min-width: min-content;
+}
+.button::part(base) {
+    color: hsla(var(--ig-success-500));
+}
+.dropdown::part(base) {
+    height: max-content;
 }
 .body-content {
     min-width: 50px;
@@ -95,9 +110,8 @@
     min-width: 50px;
     min-height: 40px;
 }
-.text {
-    height: max-content;
-    min-width: min-content;
+.icon-button::part(base) {
+    color: hsla(var(--ig-secondary-500));
 }
 .avatar {
     --background: none;
@@ -112,31 +126,24 @@
     height: max-content;
     min-width: min-content;
 }
-.text_1 {
+.text {
     color: hsla(var(--ig-surface-500));
     width: 811px;
     height: max-content;
     min-width: min-content;
 }
-.button {
+.text_1 {
     height: max-content;
     min-width: min-content;
-    flex-shrink: 0;
-}
-.button_1 {
-    height: max-content;
-    min-width: min-content;
-}
-.dropdown {
-    min-width: min-content;
-}
-.button::part(base) {
-    color: hsla(var(--ig-info-500));
-}
-.dropdown::part(base) {
-    height: max-content;
 }
 .list {
     height: max-content;
     flex-shrink: 0;
+}
+.badge {
+    width: max-content;
+    height: max-content;
+}
+.default-dialog {
+    display: none;
 }
