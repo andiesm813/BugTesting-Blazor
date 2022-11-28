@@ -8,9 +8,6 @@
     align-content: flex-start;
     height: 100%;
 }
-.row-layout {
-    display: flex;
-}
 .group {
     flex-wrap: wrap;
     justify-content: center;
@@ -24,14 +21,23 @@
     flex-grow: 1;
     flex-basis: 0;
 }
+.row-layout {
+    display: flex;
+}
 .group_1 {
     justify-content: flex-start;
     align-items: stretch;
     align-content: flex-start;
     gap: 16px;
     position: relative;
-    min-width: 400px;
+    min-width: 50px;
     min-height: 50px;
+}
+.card {
+    width: 240px;
+    height: max-content;
+    min-width: 240px;
+    flex-shrink: 0;
 }
 .group_2 {
     justify-content: flex-start;
@@ -39,7 +45,7 @@
     align-content: flex-start;
     gap: 16px;
     position: relative;
-    min-width: 50px;
+    min-width: 400px;
     min-height: 50px;
 }
 .group_3 {
@@ -64,14 +70,21 @@
 .user-input {
     height: max-content;
     min-width: min-content;
-    flex-shrink: 0;
 }
-.user-input_1 {
+.input {
     height: max-content;
     min-width: min-content;
+    flex-shrink: 0;
 }
-.dialog-min-width {
-    display: none;
+.media-content {
+    height: 120px;
+}
+.actions-content {
+    min-width: 50px;
+    min-height: 40px;
+}
+.image {
+    height: 100%;
 }
 .content {
     height: max-content;
@@ -81,4 +94,7 @@
     color: hsla(var(--ig-surface-500));
     height: max-content;
     min-width: min-content;
+}
+.dialog-min-width {
+    display: none;
 }
