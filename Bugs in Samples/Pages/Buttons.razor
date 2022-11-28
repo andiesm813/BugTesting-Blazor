@@ -2,57 +2,125 @@
 
 <div class="column-layout buttons-container">
     <div class="row-layout group">
-        <IgbButton class="button" buttons-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton class="button" buttons-scope>
-            <span class="material-icons">
-                add
-            </span>
-            <span>Button</span>
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" class="button" buttons-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Outlined" class="button" buttons-scope>
-            <span class="material-icons">
-                add
-            </span>
-            <span>Button</span>
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Flat" class="button" buttons-scope>
-            Button
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Flat" class="button" buttons-scope>
-            <span class="material-icons">
-                add
-            </span>
-            <span>Button</span>
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbButton Variant="ButtonVariant.Flat" @onclick="@(e => Dropdown?.Toggle(Button))" @ref="Button" class="button" buttons-scope>
-            <span>With dropdown</span>
-            <span class="material-icons">
-                keyboard_arrow_down
-            </span>
-            <IgbRipple></IgbRipple>
-        </IgbButton>
-        <IgbDropdown @ref="Dropdown" class="dropdown" buttons-scope>
-            <IgbDropdownItem>
-                Option
-            </IgbDropdownItem>
-        </IgbDropdown>
+        <div class="row-layout group_1">
+            <IgbButton class="button" buttons-scope>
+                Button
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbButton class="button" buttons-scope>
+                <span class="material-icons">
+                    add
+                </span>
+                <span>Button</span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbButton Variant="ButtonVariant.Outlined" class="button" buttons-scope>
+                Button
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbButton Variant="ButtonVariant.Outlined" class="button" buttons-scope>
+                <span class="material-icons">
+                    add
+                </span>
+                <span>Button</span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbButton Variant="ButtonVariant.Flat" class="button" buttons-scope>
+                Button
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbButton Variant="ButtonVariant.Flat" class="button" buttons-scope>
+                <span class="material-icons">
+                    add
+                </span>
+                <span>Button</span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbButton Variant="ButtonVariant.Flat" @onclick="@(e => Dropdown?.Toggle(Button))" @ref="Button" class="button" buttons-scope>
+                <span>With dropdown</span>
+                <span class="material-icons">
+                    keyboard_arrow_down
+                </span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbDropdown @ref="Dropdown" class="dropdown" buttons-scope>
+                <IgbDropdownItem>
+                    Option
+                </IgbDropdownItem>
+            </IgbDropdown>
+        </div>
+        <div class="row-layout group_2">
+            <IgbList class="list" buttons-scope>
+                <IgbListItem>
+                    <div slot="start">
+                        <IgbAvatar Shape="AvatarShape.Circle" class="avatar" buttons-scope>
+                            <span class="material-icons">person</span>
+                        </IgbAvatar>
+                    </div>
+                    <div slot="title">Title goes here</div>
+                    <div slot="subtitle">Subtitle...</div>
+                    <div>
+                        <IgbButton class="button_1" buttons-scope>
+                            Button
+                            <IgbRipple></IgbRipple>
+                        </IgbButton>
+                    </div>
+                    <div slot="end">
+                        <span class="material-icons icon">
+                            star
+                        </span>
+                    </div>
+                </IgbListItem>
+            </IgbList>
+            <IgbCard Outlined="true" class="card" buttons-scope>
+                <IgbCardHeader>
+                    <h3 slot="title">
+                        Title goes here...
+                    </h3>
+                    <h5 slot="subtitle">
+                        Subtitle goes here...
+                    </h5>
+                </IgbCardHeader>
+                <IgbCardContent class="body-content" buttons-scope>
+                    <div class="row-layout group_3">
+                        <IgbButton Variant="ButtonVariant.Outlined" class="button" buttons-scope>
+                            Button
+                            <IgbRipple></IgbRipple>
+                        </IgbButton>
+                    </div>
+                </IgbCardContent>
+                <IgbCardActions class="actions-content" buttons-scope>
+                    <IgbButton Variant="ButtonVariant.Flat" class="button_1" buttons-scope>
+                        Button
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                    <IgbIconButton Variant="IconButtonVariant.Flat">
+                        <span class="material-icons">
+                            favorite
+                        </span>
+                        <IgbRipple></IgbRipple>
+                    </IgbIconButton>
+                    <IgbIconButton Variant="IconButtonVariant.Flat">
+                        <span class="material-icons">
+                            bookmark
+                        </span>
+                        <IgbRipple></IgbRipple>
+                    </IgbIconButton>
+                    <IgbIconButton Variant="IconButtonVariant.Flat">
+                        <span class="material-icons">
+                            share
+                        </span>
+                        <IgbRipple></IgbRipple>
+                    </IgbIconButton>
+                </IgbCardActions>
+            </IgbCard>
+        </div>
     </div>
-    <div class="column-layout group_1">
+    <div class="column-layout group_4">
         <h6 class="content">
             ISSUES
         </h6>
-        <div class="row-layout group_2">
+        <div class="row-layout group_5">
             <p class="typography__subtitle-1 content">
                 When a button with RAISED type has the icon switched turned on, it grows 2px in height
             </p>
@@ -60,7 +128,7 @@
                 REPRODUCED IN: AppBuilder Edit &amp; Preview and Angular generated app
             </h6>
         </div>
-        <div class="row-layout group_2">
+        <div class="row-layout group_5">
             <p class="typography__subtitle-1 content">
                 Button's INNER PADDING in the generated apps is lacking, so they look smaller than Angular.
             </p>
@@ -68,7 +136,7 @@
                 REPRODUCED IN: Blazor and Web Components generated apps
             </h6>
         </div>
-        <div class="row-layout group_2">
+        <div class="row-layout group_5">
             <p class="typography__subtitle-1 content">
                 When i change the text of a raised button
             </p>
@@ -77,7 +145,7 @@
             </h6>
         </div>
     </div>
-    <div class="column-layout group_3"></div>
+    <div class="column-layout group_6"></div>
 </div>
 
 @code {
