@@ -1,8 +1,10 @@
 @page "/"
 
 <div class="column-layout buttons-container">
-    <div class="row-layout group">
-        <div class="row-layout group_1">
+    <span class="default-dialog">Dialog not yet available in Blazor</span>
+    <span class="default-dialog">Dialog not yet available in Blazor</span>
+    <div class="row-layout group_1">
+        <div class="row-layout group_2">
             <IgbButton class="button" buttons-scope>
                 Button
                 <IgbRipple></IgbRipple>
@@ -49,7 +51,7 @@
                 </IgbDropdownItem>
             </IgbDropdown>
         </div>
-        <div class="row-layout group_2">
+        <div class="row-layout group_3">
             <IgbList class="list" buttons-scope>
                 <IgbListItem>
                     <div slot="start">
@@ -82,7 +84,7 @@
                     </h5>
                 </IgbCardHeader>
                 <IgbCardContent class="body-content" buttons-scope>
-                    <div class="row-layout group_3">
+                    <div class="row-layout group">
                         <IgbButton Variant="ButtonVariant.Outlined" class="button" buttons-scope>
                             Button
                             <IgbRipple></IgbRipple>
@@ -114,38 +116,47 @@
                     </IgbIconButton>
                 </IgbCardActions>
             </IgbCard>
+            <div class="column-layout group_4">
+                <IgbButton class="button_1" buttons-scope>
+                    Default dialog
+                    <IgbRipple></IgbRipple>
+                </IgbButton>
+                <IgbButton class="button_1" buttons-scope>
+                    Custom Dialog
+                    <IgbRipple></IgbRipple>
+                </IgbButton>
+            </div>
         </div>
     </div>
-    <div class="column-layout group_4">
+    <div class="column-layout group_5">
         <h6 class="content">
             ISSUES
         </h6>
-        <div class="row-layout group_5">
+        <div class="row-layout group_6">
             <p class="typography__subtitle-1 content">
                 When a button with RAISED type has the icon switched turned on, it grows 2px in height
             </p>
             <h6 class="content">
-                REPRODUCED IN: AppBuilder Edit &amp; Preview and Angular generated app
+                REPRODUCED IN: AppBuilder Edit &amp; Preview and Angular app
             </h6>
         </div>
-        <div class="row-layout group_5">
+        <div class="row-layout group_6">
             <p class="typography__subtitle-1 content">
                 Button's INNER PADDING in the generated apps is lacking, so they look smaller than Angular.
             </p>
             <h6 class="content">
-                REPRODUCED IN: Blazor and Web Components generated apps
+                REPRODUCED IN: Blazor and Web Components apps
             </h6>
         </div>
-        <div class="row-layout group_5">
-            <p class="typography__subtitle-1 content">
-                When i change the text of a raised button
+        <div class="row-layout group_6">
+            <p class="typography__subtitle-1 text_1">
+                When i change the foreground color of just ONE button, all the buttons get changed their foregrounds, except if they are part of a component. The only exception to this is if the button is inside the content of a card.
             </p>
             <h6 class="content">
-                NOT HAPPENING!!! (sample app issue?) 
+                REPRODUCED IN: Blazor and Web Components apps
             </h6>
         </div>
     </div>
-    <div class="column-layout group_6"></div>
 </div>
 
 @code {
