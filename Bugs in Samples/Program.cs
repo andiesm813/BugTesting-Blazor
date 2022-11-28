@@ -22,6 +22,8 @@ void RegisterIgniteUI(IServiceCollection services)
         typeof(IgbButtonModule),
         typeof(IgbDropdownModule),
         typeof(IgbDropdownItemModule),
+        typeof(IgbListModule),
+        typeof(IgbAvatarModule),
         typeof(IgbCardModule),
         typeof(IgbIconButtonModule)
     );
