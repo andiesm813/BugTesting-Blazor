@@ -1,0 +1,29 @@
+.row-layout {
+    display: flex;
+}
+.master-view-container {
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    height: 100%;
+}
+.nav-drawer {
+    min-width: min-content;
+    min-height: 0;
+    flex-shrink: 0;
+}
+.view-container {
+    position: relative;
+    min-width: 0;
+    min-height: 0;
+    flex-grow: 1;
+}
+.nav-drawer::part(main) {
+    width: 240px;
+}
+.icon {
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+    color: hsla(var(--ig-secondary-600));
+}

@@ -1,0 +1,56 @@
+@page "/dialog"
+
+<div class="column-layout dialog-container">
+    <div class="row-layout group">
+        <IgbButton class="user-input" dialog-scope>
+            DIALOG JUST BUTTONS
+            <IgbRipple></IgbRipple>
+        </IgbButton>
+        <IgbButton class="user-input" dialog-scope>
+            DIALOG WITH MIN WIDTH
+            <IgbRipple></IgbRipple>
+        </IgbButton>
+    </div>
+    <span class="dialog-min-width">Dialog not yet available in Blazor</span>
+    <span class="dialog-min-width">Dialog not yet available in Blazor</span>
+    <div class="column-layout group_3">
+        <h6 class="content_1">
+            ISSUES
+        </h6>
+        <div class="row-layout group_4">
+            <p class="typography__subtitle-1 content_1">
+                The top-left padding of the dialog doesnt match the bottom-right padding.
+            </p>
+            <h6 class="content_1">
+                REPRODUCED IN: AppBuilder Edit &amp; Preview and Angular generated app
+            </h6>
+        </div>
+        <div class="row-layout group_4">
+            <p class="typography__subtitle-1 content_1">
+                The font of the title shown in AppBuilder preview doesnt match the generated font 
+            </p>
+            <h6 class="content_1">
+                REPRODUCED IN: Angular and Web Components generated apps
+            </h6>
+        </div>
+        <div class="row-layout group_4">
+            <p class="typography__subtitle-1 content_1">
+                Action buttons dont have spacing between them
+            </p>
+            <h6 class="content_1">
+                REPRODUCED IN: AppBuilder Edit &amp; Preview
+            </h6>
+        </div>
+        <div class="row-layout group_4">
+            <p class="typography__subtitle-1 content_1">
+                Dialog is cropped
+            </p>
+            <h6 class="content_1">
+                REPRODUCED IN: Web Components generated app
+            </h6>
+        </div>
+    </div>
+</div>
+
+@code {
+}

@@ -1,0 +1,58 @@
+@page "/space-between"
+
+<div class="column-layout space-between-container">
+    <div class="column-layout group">
+        <div class="row-layout group_1">
+            <IgbButton class="button" space-between-scope>
+                Button
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbButton Variant="ButtonVariant.Flat" @onclick="@(e => Dropdown1?.Toggle(Button1))" @ref="Button1" class="button" space-between-scope>
+                <span>With dropdown</span>
+                <span class="material-icons">
+                    keyboard_arrow_down
+                </span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbDropdown @ref="Dropdown1" class="dropdown" space-between-scope>
+                <IgbDropdownItem>
+                    Option
+                </IgbDropdownItem>
+                <IgbDropdownItem>
+                    Option
+                </IgbDropdownItem>
+            </IgbDropdown>
+        </div>
+        <div class="row-layout group_1">
+            <IgbButton class="button" space-between-scope>
+                Button
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbButton Variant="ButtonVariant.Flat" class="button" space-between-scope>
+                <span>Without dropdown</span>
+                <span class="material-icons">
+                    keyboard_arrow_down
+                </span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+        </div>
+    </div>
+    <div class="column-layout group_2">
+        <h6 class="content">
+            ISSUES
+        </h6>
+        <div class="row-layout group_3">
+            <p class="typography__subtitle-1 content">
+                If a container, with 2 inner elements, has horizontal alignment set to space between, if one of the elements has a dropdown, the space between is altered, since it's considering the dropdown as a 3rd item.
+            </p>
+            <h6 class="content">
+                REPRODUCED IN: AppBuilder Edit &amp; Preview, Blazor
+            </h6>
+        </div>
+    </div>
+</div>
+
+@code {
+    private IgbButton? Button1;
+    private IgbDropdown? Dropdown1;
+}

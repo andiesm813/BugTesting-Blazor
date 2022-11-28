@@ -1,0 +1,53 @@
+@inherits LayoutComponentBase
+@inject NavigationManager NavigationManager
+
+<div class="row-layout master-view-container">
+    <IgbNavDrawer Open="true" Position="NavDrawerPosition.Relative" class="nav-drawer" master-view-scope>
+        <IgbNavDrawerItem @onclick="@(e => Navigate(""))">
+            <span slot="icon">
+                <span class="material-icons icon">
+                    bug_report
+                </span>
+                <IgbRipple></IgbRipple>
+            </span>
+            <div slot="content">Buttons</div>
+        </IgbNavDrawerItem>
+        <IgbNavDrawerItem @onclick="@(e => Navigate("cards-opacity"))">
+            <span slot="icon">
+                <span class="material-icons icon">
+                    bug_report
+                </span>
+                <IgbRipple></IgbRipple>
+            </span>
+            <div slot="content">Cards Opacity</div>
+        </IgbNavDrawerItem>
+        <IgbNavDrawerItem @onclick="@(e => Navigate("card-actions"))">
+            <span slot="icon">
+                <span class="material-icons icon">
+                    bug_report
+                </span>
+                <IgbRipple></IgbRipple>
+            </span>
+            <div slot="content">Card Action Buttons</div>
+        </IgbNavDrawerItem>
+        <IgbNavDrawerItem @onclick="@(e => Navigate("dialog"))">
+            <span slot="icon">
+                <span class="material-icons icon">
+                    bug_report
+                </span>
+                <IgbRipple></IgbRipple>
+            </span>
+            <div slot="content">Dialogs</div>
+        </IgbNavDrawerItem>
+    </IgbNavDrawer>
+    <div class="view-container">
+        @Body
+    </div>
+</div>
+
+@code {
+    private void Navigate(string path)
+    {
+        NavigationManager.NavigateTo(path);
+    }
+}

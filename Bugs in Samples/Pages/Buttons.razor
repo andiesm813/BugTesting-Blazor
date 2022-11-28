@@ -1,0 +1,87 @@
+@page "/"
+
+<div class="column-layout buttons-container">
+    <div class="row-layout group">
+        <IgbButton class="button" buttons-scope>
+            Button
+            <IgbRipple></IgbRipple>
+        </IgbButton>
+        <IgbButton class="button" buttons-scope>
+            <span class="material-icons">
+                add
+            </span>
+            <span>Button</span>
+            <IgbRipple></IgbRipple>
+        </IgbButton>
+        <IgbButton Variant="ButtonVariant.Outlined" class="button" buttons-scope>
+            Button
+            <IgbRipple></IgbRipple>
+        </IgbButton>
+        <IgbButton Variant="ButtonVariant.Outlined" class="button" buttons-scope>
+            <span class="material-icons">
+                add
+            </span>
+            <span>Button</span>
+            <IgbRipple></IgbRipple>
+        </IgbButton>
+        <IgbButton Variant="ButtonVariant.Flat" class="button" buttons-scope>
+            Button
+            <IgbRipple></IgbRipple>
+        </IgbButton>
+        <IgbButton Variant="ButtonVariant.Flat" class="button" buttons-scope>
+            <span class="material-icons">
+                add
+            </span>
+            <span>Button</span>
+            <IgbRipple></IgbRipple>
+        </IgbButton>
+        <IgbButton Variant="ButtonVariant.Flat" @onclick="@(e => Dropdown?.Toggle(Button))" @ref="Button" class="button" buttons-scope>
+            <span>With dropdown</span>
+            <span class="material-icons">
+                keyboard_arrow_down
+            </span>
+            <IgbRipple></IgbRipple>
+        </IgbButton>
+        <IgbDropdown @ref="Dropdown" class="dropdown" buttons-scope>
+            <IgbDropdownItem>
+                Option
+            </IgbDropdownItem>
+        </IgbDropdown>
+    </div>
+    <div class="column-layout group_1">
+        <h6 class="content">
+            ISSUES
+        </h6>
+        <div class="row-layout group_2">
+            <p class="typography__subtitle-1 content">
+                When a button with RAISED type has the icon switched turned on, it grows 2px in height
+            </p>
+            <h6 class="content">
+                REPRODUCED IN: AppBuilder Edit &amp; Preview and Angular generated app
+            </h6>
+        </div>
+        <div class="row-layout group_2">
+            <p class="typography__subtitle-1 content">
+                Button's INNER PADDING in the generated apps is lacking, so they look smaller than Angular.
+            </p>
+            <h6 class="content">
+                REPRODUCED IN: Blazor and Web Components generated apps
+            </h6>
+        </div>
+    </div>
+    <div class="column-layout group_3">
+        <div class="row-layout group_2">
+            <p class="typography__subtitle-1 content">
+                Outline and flat buttons have white text in Blazor and WebComponents
+            </p>
+            <h6 class="content">
+                NOT HAPPENING!!! (sample app issue?) 
+            </h6>
+        </div>
+    </div>
+</div>
+
+@code {
+    private IgbButton? Button;
+    private IgbDropdown? Dropdown;
+}
