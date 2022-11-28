@@ -63,7 +63,7 @@
     min-width: min-content;
 }
 .button::part(base) {
-    color: hsla(var(--ig-info-500));
+    color: hsla(var(--ig-success-500));
 }
 .dropdown::part(base) {
     height: max-content;
