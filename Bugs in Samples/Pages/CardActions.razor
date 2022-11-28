@@ -1,58 +1,111 @@
 @page "/card-actions"
-@inject TravelApp.TravelAppService travelAppService
 
 <div class="column-layout card-actions-container">
-    <div class="row-layout group">
-        @foreach (var item in travelAppSelectedArticles)
-        {
-            <IgbCard Outlined="true" class="card" card-actions-scope>
-                <IgbCardMedia class="media-content" card-actions-scope>
-                    <img src="@item.Image_url" class="image" />
-                </IgbCardMedia>
-                <IgbCardHeader>
-                    <h3 slot="title">
-                        Product Name
-                    </h3>
-                    <h5 slot="subtitle">
-                        Department
-                    </h5>
-                </IgbCardHeader>
-                <IgbCardContent class="body-content" card-actions-scope>
-                    <p class="typography__body-1 text">
-                        Here you can add some description of the product in more details
-                    </p>
-                </IgbCardContent>
-                <IgbCardActions class="actions-content" card-actions-scope>
-                    <IgbButton Variant="ButtonVariant.Outlined" class="button" card-actions-scope>
-                        Edit
-                        <IgbRipple></IgbRipple>
-                    </IgbButton>
-                    <IgbIconButton Variant="IconButtonVariant.Flat" class="icon-button" card-actions-scope>
-                        <span class="material-icons">
-                            favorite
-                        </span>
-                        <IgbRipple></IgbRipple>
-                    </IgbIconButton>
-                    <IgbIconButton Variant="IconButtonVariant.Flat" class="icon-button" card-actions-scope>
-                        <span class="material-icons">
-                            share
-                        </span>
-                        <IgbRipple></IgbRipple>
-                    </IgbIconButton>
-                </IgbCardActions>
-            </IgbCard>
-        }
+    <div class="row-layout cards">
+        <IgbCard Outlined="true" class="card" card-actions-scope>
+            <IgbCardMedia class="media-content" card-actions-scope>
+                <img src="assets/theme-light.svg" class="image" />
+            </IgbCardMedia>
+            <IgbCardHeader>
+                <h3 slot="title">
+                    Card Title
+                </h3>
+                <h5 slot="subtitle">
+                    This is the card subtitle
+                </h5>
+            </IgbCardHeader>
+            <IgbCardActions class="actions-content" card-actions-scope>
+                <IgbButton Variant="ButtonVariant.Flat" class="button" card-actions-scope>
+                    Button
+                    <IgbRipple></IgbRipple>
+                </IgbButton>
+                <IgbIconButton Variant="IconButtonVariant.Flat" class="icon-button" card-actions-scope>
+                    <span class="material-icons">
+                        favorite
+                    </span>
+                    <IgbRipple></IgbRipple>
+                </IgbIconButton>
+                <IgbIconButton Variant="IconButtonVariant.Flat" class="icon-button" card-actions-scope>
+                    <span class="material-icons">
+                        share
+                    </span>
+                    <IgbRipple></IgbRipple>
+                </IgbIconButton>
+            </IgbCardActions>
+        </IgbCard>
+        <IgbCard Outlined="true" class="card" card-actions-scope>
+            <IgbCardMedia class="media-content" card-actions-scope>
+                <img src="assets/theme-dark.svg" class="image" />
+            </IgbCardMedia>
+            <IgbCardHeader>
+                <h3 slot="title">
+                    Card Title
+                </h3>
+                <h5 slot="subtitle">
+                    This is the card subtitle
+                </h5>
+            </IgbCardHeader>
+            <IgbCardActions class="actions-content" card-actions-scope>
+                <IgbButton Variant="ButtonVariant.Flat" class="button" card-actions-scope>
+                    Button
+                    <IgbRipple></IgbRipple>
+                </IgbButton>
+                <IgbIconButton Variant="IconButtonVariant.Flat" class="icon-button" card-actions-scope>
+                    <span class="material-icons">
+                        favorite
+                    </span>
+                    <IgbRipple></IgbRipple>
+                </IgbIconButton>
+                <IgbIconButton Variant="IconButtonVariant.Flat" class="icon-button" card-actions-scope>
+                    <span class="material-icons">
+                        share
+                    </span>
+                    <IgbRipple></IgbRipple>
+                </IgbIconButton>
+            </IgbCardActions>
+        </IgbCard>
+        <IgbCard Outlined="true" class="card" card-actions-scope>
+            <IgbCardMedia class="media-content" card-actions-scope>
+                <img src="assets/design system.png" class="image" />
+            </IgbCardMedia>
+            <IgbCardHeader>
+                <h3 slot="title">
+                    Card Title
+                </h3>
+                <h5 slot="subtitle">
+                    This is the card subtitle
+                </h5>
+            </IgbCardHeader>
+            <IgbCardActions class="actions-content" card-actions-scope>
+                <IgbButton Variant="ButtonVariant.Flat" class="button" card-actions-scope>
+                    Button
+                    <IgbRipple></IgbRipple>
+                </IgbButton>
+                <IgbIconButton Variant="IconButtonVariant.Flat" class="icon-button" card-actions-scope>
+                    <span class="material-icons">
+                        favorite
+                    </span>
+                    <IgbRipple></IgbRipple>
+                </IgbIconButton>
+                <IgbIconButton Variant="IconButtonVariant.Flat" class="icon-button" card-actions-scope>
+                    <span class="material-icons">
+                        share
+                    </span>
+                    <IgbRipple></IgbRipple>
+                </IgbIconButton>
+            </IgbCardActions>
+        </IgbCard>
     </div>
-    <div class="column-layout group_1">
+    <div class="column-layout group">
         <h6 class="content">
             Both issues REPRODUCED IN: Blazor and Web Components generated apps
         </h6>
-        <div class="row-layout group_2">
-            <p class="typography__subtitle-1 text_1">
+        <div class="row-layout group_1">
+            <p class="typography__subtitle-1 text">
                 If the positioning of the actions is reversed, when generated, Web Comp. and Blazor reverses them back to the original place.
             </p>
         </div>
-        <div class="row-layout group_2">
+        <div class="row-layout group_1">
             <p class="typography__subtitle-1 content">
                 Action icons look justified, instead of being aligned to the left or right
             </p>
@@ -61,10 +114,4 @@
 </div>
 
 @code {
-    private TravelApp.SelectedArticlesType[] travelAppSelectedArticles = Array.Empty<TravelApp.SelectedArticlesType>();
-
-    protected override async Task OnInitializedAsync()
-    {
-        travelAppSelectedArticles = await this.travelAppService.GetSelectedArticles() ?? travelAppSelectedArticles;
-    }
 }

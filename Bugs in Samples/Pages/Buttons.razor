@@ -1,10 +1,8 @@
 @page "/"
 
 <div class="column-layout buttons-container">
-    <span class="default-dialog">Dialog not yet available in Blazor</span>
-    <span class="default-dialog">Dialog not yet available in Blazor</span>
-    <div class="row-layout group_1">
-        <div class="row-layout group_2">
+    <div class="row-layout group">
+        <div class="row-layout group_1">
             <IgbButton class="button" buttons-scope>
                 Button
                 <IgbRipple></IgbRipple>
@@ -51,7 +49,7 @@
                 </IgbDropdownItem>
             </IgbDropdown>
         </div>
-        <div class="row-layout group_3">
+        <div class="row-layout group_2">
             <IgbList class="list" buttons-scope>
                 <IgbListItem>
                     <div slot="start">
@@ -77,46 +75,48 @@
             <IgbCard Outlined="true" class="card" buttons-scope>
                 <IgbCardHeader>
                     <h3 slot="title">
-                        Title goes here...
+                        Card Title
                     </h3>
                     <h5 slot="subtitle">
-                        Subtitle goes here...
+                        This is the card subtitle
                     </h5>
                 </IgbCardHeader>
                 <IgbCardContent class="body-content" buttons-scope>
-                    <div class="row-layout group">
-                        <IgbButton Variant="ButtonVariant.Outlined" class="button" buttons-scope>
-                            Button
+                    <div class="column-layout group_3">
+                        <IgbButton class="button_1" buttons-scope>
+                            Button IN CONTENT
+                            <IgbRipple></IgbRipple>
+                        </IgbButton>
+                        <IgbButton Variant="ButtonVariant.Outlined" class="button_1" buttons-scope>
+                            BUTTON IN CONTENT
                             <IgbRipple></IgbRipple>
                         </IgbButton>
                     </div>
                 </IgbCardContent>
                 <IgbCardActions class="actions-content" buttons-scope>
-                    <IgbButton Variant="ButtonVariant.Flat" class="button_1" buttons-scope>
+                    <IgbButton Variant="ButtonVariant.Outlined" class="button_1" buttons-scope>
                         Button
                         <IgbRipple></IgbRipple>
                     </IgbButton>
-                    <IgbIconButton Variant="IconButtonVariant.Flat">
+                    <IgbIconButton Variant="IconButtonVariant.Flat" class="icon-button" buttons-scope>
                         <span class="material-icons">
                             favorite
                         </span>
                         <IgbRipple></IgbRipple>
                     </IgbIconButton>
-                    <IgbIconButton Variant="IconButtonVariant.Flat">
-                        <span class="material-icons">
-                            bookmark
-                        </span>
-                        <IgbRipple></IgbRipple>
-                    </IgbIconButton>
-                    <IgbIconButton Variant="IconButtonVariant.Flat">
+                    <IgbIconButton Variant="IconButtonVariant.Flat" class="icon-button" buttons-scope>
                         <span class="material-icons">
                             share
                         </span>
                         <IgbRipple></IgbRipple>
                     </IgbIconButton>
+                    <IgbButton class="button_1" buttons-scope>
+                        Button
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
                 </IgbCardActions>
             </IgbCard>
-            <div class="column-layout group_4">
+            <div class="column-layout group_3">
                 <IgbButton class="button_1" buttons-scope>
                     Default dialog
                     <IgbRipple></IgbRipple>
@@ -128,19 +128,22 @@
             </div>
         </div>
     </div>
-    <div class="column-layout group_5">
+    <div class="column-layout group_4">
         <h6 class="content">
             ISSUES
         </h6>
-        <div class="row-layout group_6">
+        <div class="row-layout group_5">
             <p class="typography__subtitle-1 content">
-                When a button with RAISED type has the icon switched turned on, it grows 2px in height
+                When a button with RAISED or FLAT type has the icon switched turned on, it grows 2px in height
             </p>
             <h6 class="content">
                 REPRODUCED IN: AppBuilder Edit &amp; Preview and Angular app
             </h6>
+            <IgbBadge Variant="BadgeVariant.Info" class="badge" buttons-scope>
+                BUG CREATED
+            </IgbBadge>
         </div>
-        <div class="row-layout group_6">
+        <div class="row-layout group_5">
             <p class="typography__subtitle-1 content">
                 Button's INNER PADDING in the generated apps is lacking, so they look smaller than Angular.
             </p>
@@ -148,15 +151,17 @@
                 REPRODUCED IN: Blazor and Web Components apps
             </h6>
         </div>
-        <div class="row-layout group_6">
-            <p class="typography__subtitle-1 text_1">
-                When i change the foreground color of just ONE button, all the buttons get changed their foregrounds, except if they are part of a component. The only exception to this is if the button is inside the content of a card.
+        <div class="row-layout group_5">
+            <p class="typography__subtitle-1 text">
+                When i change the foreground color of just ONE button, all the buttons get changed their foregrounds, except if they are part of a component.
             </p>
             <h6 class="content">
                 REPRODUCED IN: Blazor and Web Components apps
             </h6>
         </div>
     </div>
+    <span class="default-dialog">Dialog not yet available in Blazor</span>
+    <span class="default-dialog">Dialog not yet available in Blazor</span>
 </div>
 
 @code {

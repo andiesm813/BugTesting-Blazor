@@ -24,7 +24,7 @@
 .row-layout {
     display: flex;
 }
-.group_1 {
+.cards {
     justify-content: flex-start;
     align-items: stretch;
     align-content: flex-start;
@@ -39,7 +39,7 @@
     min-width: 240px;
     flex-shrink: 0;
 }
-.group_2 {
+.group_1 {
     justify-content: flex-start;
     align-items: stretch;
     align-content: flex-start;
@@ -48,7 +48,7 @@
     min-width: 400px;
     min-height: 50px;
 }
-.group_3 {
+.group_2 {
     background-color: hsla(var(--ig-secondary-800));
     justify-content: flex-start;
     align-items: stretch;
@@ -59,7 +59,7 @@
     min-width: 50px;
     min-height: 50px;
 }
-.group_4 {
+.group_3 {
     justify-content: flex-start;
     align-items: stretch;
     align-content: flex-start;
