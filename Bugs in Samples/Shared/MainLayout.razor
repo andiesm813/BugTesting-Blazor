@@ -12,6 +12,15 @@
             </span>
             <div slot="content">Buttons</div>
         </IgbNavDrawerItem>
+        <IgbNavDrawerItem @onclick="@(e => Navigate("space-between"))">
+            <span slot="icon">
+                <span class="material-icons icon">
+                    bug_report
+                </span>
+                <IgbRipple></IgbRipple>
+            </span>
+            <div slot="content">Space Between</div>
+        </IgbNavDrawerItem>
         <IgbNavDrawerItem @onclick="@(e => Navigate("cards-opacity"))">
             <span slot="icon">
                 <span class="material-icons icon">
