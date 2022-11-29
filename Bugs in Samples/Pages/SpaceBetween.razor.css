@@ -30,7 +30,7 @@
     position: relative;
 }
 .group_2 {
-    background-color: hsla(var(--ig-secondary-800));
+    background-color: #893976;
     justify-content: flex-start;
     align-items: stretch;
     align-content: flex-start;

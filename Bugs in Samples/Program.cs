@@ -15,15 +15,16 @@ await builder.Build().RunAsync();
 void RegisterIgniteUI(IServiceCollection services)
 {
     services.AddIgniteUIBlazor(
-        typeof(IgbNavDrawerModule),
+        typeof(IgbNavbarModule),
+        typeof(IgbIconButtonModule),
         typeof(IgbRippleModule),
+        typeof(IgbNavDrawerModule),
         typeof(IgbButtonModule),
         typeof(IgbDropdownModule),
         typeof(IgbDropdownItemModule),
         typeof(IgbListModule),
         typeof(IgbAvatarModule),
         typeof(IgbCardModule),
-        typeof(IgbBadgeModule),
-        typeof(IgbIconButtonModule)
+        typeof(IgbBadgeModule)
     );
 }
