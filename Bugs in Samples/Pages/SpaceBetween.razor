@@ -7,7 +7,7 @@
                 Button
                 <IgbRipple></IgbRipple>
             </IgbButton>
-            <IgbButton Variant="ButtonVariant.Flat" @onclick="@(e => Dropdown1?.Toggle(Button1))" @ref="Button1" class="button" space-between-scope>
+            <IgbButton Variant="ButtonVariant.Flat" @onclick="@(e => Dropdown1?.Toggle(Button))" @ref="Button" class="button" space-between-scope>
                 <span>With dropdown</span>
                 <span class="material-icons">
                     keyboard_arrow_down
@@ -48,11 +48,14 @@
             <h6 class="content">
                 REPRODUCED IN: AppBuilder Edit &amp; Preview, Blazor and Web Components
             </h6>
+            <IgbBadge Variant="BadgeVariant.Info" class="badge" space-between-scope>
+                BUG CREATED
+            </IgbBadge>
         </div>
     </div>
 </div>
 
 @code {
-    private IgbButton? Button1;
+    private IgbButton? Button;
     private IgbDropdown? Dropdown1;
 }
