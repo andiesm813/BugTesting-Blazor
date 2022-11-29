@@ -20,13 +20,14 @@
     flex-grow: 1;
     flex-basis: 0;
 }
-.group_1 {
+.buttons {
     justify-content: flex-start;
-    align-items: stretch;
+    align-items: center;
     align-content: flex-start;
-    gap: 8px;
+    gap: 16px;
     position: relative;
     min-width: 50px;
+    min-height: 50px;
 }
 .button {
     height: max-content;
