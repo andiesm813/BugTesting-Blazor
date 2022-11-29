@@ -14,7 +14,6 @@
 
   <ItemGroup>
     <None Update="Shared/MainLayout.razor.css" CssScope="master-view-scope" />
-    <None Update="Pages/Buttons.razor.css" CssScope="buttons-scope" />
     <None Update="Pages/SpaceBetween.razor.css" CssScope="space-between-scope" />
     <None Update="Pages/CardsOpacity.razor.css" CssScope="cards-opacity-scope" />
     <None Update="Pages/CardActions.razor.css" CssScope="card-actions-scope" />
