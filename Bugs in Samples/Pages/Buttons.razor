@@ -2,7 +2,7 @@
 
 <div class="column-layout buttons-container">
     <div class="row-layout group">
-        <div class="row-layout group_1">
+        <div @onclick="@(e => Dropdown?.Toggle(Group))" @ref="Group" class="row-layout group_1">
             <IgbButton class="button" buttons-scope>
                 Button
                 <IgbRipple></IgbRipple>
@@ -36,7 +36,7 @@
                 <span>Button</span>
                 <IgbRipple></IgbRipple>
             </IgbButton>
-            <IgbButton Variant="ButtonVariant.Flat" @onclick="@(e => Dropdown?.Toggle(Button))" @ref="Button" class="button" buttons-scope>
+            <IgbButton Variant="ButtonVariant.Flat" class="button" buttons-scope>
                 <span>With dropdown</span>
                 <span class="material-icons">
                     keyboard_arrow_down
@@ -150,14 +150,20 @@
             <h6 class="content">
                 REPRODUCED IN: Blazor and Web Components apps
             </h6>
+            <IgbBadge Variant="BadgeVariant.Info" class="badge" buttons-scope>
+                BUG CREATED
+            </IgbBadge>
         </div>
         <div class="row-layout group_5">
             <p class="typography__subtitle-1 text">
-                When i change the foreground color of just ONE button, all the buttons get changed their foregrounds, except if they are part of a component.
+                When i change the foreground color of just ONE button, all the buttons get changed their foregrounds, except if they are part of a component. With the exception of buttons placed in custom dialog window content.
             </p>
             <h6 class="content">
                 REPRODUCED IN: Blazor and Web Components apps
             </h6>
+            <IgbBadge Variant="BadgeVariant.Info" class="badge" buttons-scope>
+                BUG CREATED
+            </IgbBadge>
         </div>
     </div>
     <span class="default-dialog">Dialog not yet available in Blazor</span>
@@ -165,6 +171,6 @@
 </div>
 
 @code {
-    private IgbButton? Button;
+    private div? Group;
     private IgbDropdown? Dropdown;
 }
