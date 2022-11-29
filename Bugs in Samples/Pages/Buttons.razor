@@ -1,6 +1,6 @@
 @page "/"
 
-<div class="row-layout buttons-container">
+<div class="column-layout buttons-container">
     <div class="column-layout group">
         <div class="row-layout buttons">
             <IgbButton class="button" buttons-scope>
@@ -48,40 +48,8 @@
                     Option
                 </IgbDropdownItem>
             </IgbDropdown>
-            <IgbCard Outlined="true" class="card" buttons-scope>
-                <IgbCardHeader>
-                    <h3 slot="title">
-                        Title goes here...
-                    </h3>
-                    <h5 slot="subtitle">
-                        Subtitle goes here...
-                    </h5>
-                </IgbCardHeader>
-                <IgbCardContent class="body-content" buttons-scope>
-                    <div class="column-layout group_1">
-                        <IgbButton class="button_1" buttons-scope>
-                            Button in content
-                            <IgbRipple></IgbRipple>
-                        </IgbButton>
-                        <IgbButton Variant="ButtonVariant.Outlined" class="button_1" buttons-scope>
-                            Button in content
-                            <IgbRipple></IgbRipple>
-                        </IgbButton>
-                    </div>
-                </IgbCardContent>
-                <IgbCardActions class="actions-content" buttons-scope>
-                    <IgbButton Variant="ButtonVariant.Flat" class="button_1" buttons-scope>
-                        Button
-                        <IgbRipple></IgbRipple>
-                    </IgbButton>
-                    <IgbButton class="button_1" buttons-scope>
-                        Button
-                        <IgbRipple></IgbRipple>
-                    </IgbButton>
-                </IgbCardActions>
-            </IgbCard>
         </div>
-        <div class="row-layout group_2">
+        <div class="row-layout group_1">
             <IgbList class="list" buttons-scope>
                 <IgbListItem>
                     <div slot="start">
@@ -114,7 +82,7 @@
                     </h5>
                 </IgbCardHeader>
                 <IgbCardContent class="body-content" buttons-scope>
-                    <div class="column-layout group_1">
+                    <div class="column-layout group_2">
                         <IgbButton class="button_1" buttons-scope>
                             Button in content
                             <IgbRipple></IgbRipple>
@@ -136,7 +104,7 @@
                     </IgbButton>
                 </IgbCardActions>
             </IgbCard>
-            <div class="column-layout group_1">
+            <div class="column-layout group_2">
                 <IgbButton class="button_1" buttons-scope>
                     Custom dialog
                     <IgbRipple></IgbRipple>
@@ -145,6 +113,44 @@
         </div>
     </div>
     <span class="custom-dialog">Dialog not yet available in Blazor</span>
+    <div class="column-layout group_3">
+        <h6 class="content">
+            ISSUES
+        </h6>
+        <div class="row-layout group_4">
+            <p class="typography__subtitle-1 content">
+                When a button with RAISED or FLAT type has the icon switched turned on, it grows 2px in height
+            </p>
+            <h6 class="content">
+                REPRODUCED IN: AppBuilder Edit &amp;amp; Preview and Angular app
+            </h6>
+            <IgbBadge Variant="BadgeVariant.Info" class="badge" buttons-scope>
+                BUG CREATED
+            </IgbBadge>
+        </div>
+        <div class="row-layout group_4">
+            <p class="typography__subtitle-1 content">
+                Button's INNER PADDING in the generated apps is lacking, so they look smaller than Angular
+            </p>
+            <h6 class="content">
+                REPRODUCED IN: Blazor and Web Components apps
+            </h6>
+            <IgbBadge Variant="BadgeVariant.Info" class="badge" buttons-scope>
+                BUG CREATED
+            </IgbBadge>
+        </div>
+        <div class="row-layout group_4">
+            <p class="typography__subtitle-1 content">
+                When i change the foreground color of just ONE button, all the buttons get changed their foregrounds, except if they are part of a component. With the exception of buttons placed in custom dialog window content
+            </p>
+            <h6 class="content">
+                REPRODUCED IN: Blazor and Web Components apps
+            </h6>
+            <IgbBadge Variant="BadgeVariant.Info" class="badge" buttons-scope>
+                BUG CREATED
+            </IgbBadge>
+        </div>
+    </div>
 </div>
 
 @code {
