@@ -48,8 +48,40 @@
                     Option
                 </IgbDropdownItem>
             </IgbDropdown>
+            <IgbCard Outlined="true" class="card" buttons-scope>
+                <IgbCardHeader>
+                    <h3 slot="title">
+                        Title goes here...
+                    </h3>
+                    <h5 slot="subtitle">
+                        Subtitle goes here...
+                    </h5>
+                </IgbCardHeader>
+                <IgbCardContent class="body-content" buttons-scope>
+                    <div class="column-layout group_1">
+                        <IgbButton class="button_1" buttons-scope>
+                            Button in content
+                            <IgbRipple></IgbRipple>
+                        </IgbButton>
+                        <IgbButton Variant="ButtonVariant.Outlined" class="button_1" buttons-scope>
+                            Button in content
+                            <IgbRipple></IgbRipple>
+                        </IgbButton>
+                    </div>
+                </IgbCardContent>
+                <IgbCardActions class="actions-content" buttons-scope>
+                    <IgbButton Variant="ButtonVariant.Flat" class="button_1" buttons-scope>
+                        Button
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                    <IgbButton class="button_1" buttons-scope>
+                        Button
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                </IgbCardActions>
+            </IgbCard>
         </div>
-        <div class="row-layout group_1">
+        <div class="row-layout group_2">
             <IgbList class="list" buttons-scope>
                 <IgbListItem>
                     <div slot="start">
@@ -82,7 +114,7 @@
                     </h5>
                 </IgbCardHeader>
                 <IgbCardContent class="body-content" buttons-scope>
-                    <div class="column-layout group_2">
+                    <div class="column-layout group_1">
                         <IgbButton class="button_1" buttons-scope>
                             Button in content
                             <IgbRipple></IgbRipple>
@@ -104,7 +136,7 @@
                     </IgbButton>
                 </IgbCardActions>
             </IgbCard>
-            <div class="column-layout group_2">
+            <div class="column-layout group_1">
                 <IgbButton class="button_1" buttons-scope>
                     Custom dialog
                     <IgbRipple></IgbRipple>
