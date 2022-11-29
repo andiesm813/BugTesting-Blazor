@@ -98,3 +98,7 @@
     height: max-content;
     min-width: min-content;
 }
+.badge {
+    width: max-content;
+    height: max-content;
+}

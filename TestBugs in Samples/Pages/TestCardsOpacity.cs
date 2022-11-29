@@ -15,7 +15,8 @@ namespace TestBugs_in_Samples
 				typeof(IgniteUI.Blazor.Controls.IgbCardModule),
 				typeof(IgniteUI.Blazor.Controls.IgbButtonModule),
 				typeof(IgniteUI.Blazor.Controls.IgbRippleModule),
-				typeof(IgniteUI.Blazor.Controls.IgbIconButtonModule));
+				typeof(IgniteUI.Blazor.Controls.IgbIconButtonModule),
+				typeof(IgniteUI.Blazor.Controls.IgbBadgeModule));
 			var componentUnderTest = ctx.RenderComponent<CardsOpacity>();
 			Assert.NotNull(componentUnderTest);
 		}

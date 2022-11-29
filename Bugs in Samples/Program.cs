@@ -20,10 +20,8 @@ void RegisterIgniteUI(IServiceCollection services)
         typeof(IgbButtonModule),
         typeof(IgbDropdownModule),
         typeof(IgbDropdownItemModule),
-        typeof(IgbListModule),
-        typeof(IgbAvatarModule),
+        typeof(IgbBadgeModule),
         typeof(IgbCardModule),
-        typeof(IgbIconButtonModule),
-        typeof(IgbBadgeModule)
+        typeof(IgbIconButtonModule)
     );
 }

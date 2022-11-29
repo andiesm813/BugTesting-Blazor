@@ -33,31 +33,6 @@
     min-width: 50px;
 }
 .group_2 {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: flex-start;
-    gap: 24px;
-    position: relative;
-    min-width: 50px;
-    min-height: 50px;
-}
-.card {
-    height: max-content;
-    min-width: 240px;
-    max-width: 320px;
-    flex-shrink: 0;
-}
-.group_3 {
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: flex-start;
-    gap: 16px;
-    position: relative;
-    min-width: 50px;
-    min-height: 50px;
-}
-.group_4 {
     background-color: hsla(var(--ig-secondary-800));
     justify-content: flex-start;
     align-items: stretch;
@@ -68,7 +43,7 @@
     min-width: 50px;
     min-height: 50px;
 }
-.group_5 {
+.group_3 {
     justify-content: flex-start;
     align-items: stretch;
     align-content: flex-start;
@@ -76,7 +51,7 @@
     position: relative;
     min-width: 50px;
 }
-.group_6 {
+.group_4 {
     justify-content: flex-start;
     align-items: stretch;
     align-content: flex-start;
@@ -102,25 +77,6 @@
 .dropdown::part(base) {
     height: max-content;
 }
-.body-content {
-    min-width: 50px;
-    min-height: 50px;
-}
-.actions-content {
-    min-width: 50px;
-    min-height: 40px;
-}
-.icon-button::part(base) {
-    color: hsla(var(--ig-secondary-500));
-}
-.avatar {
-    --background: none;
-}
-.icon {
-    font-size: 24px;
-    width: 24px;
-    height: 24px;
-}
 .content {
     color: hsla(var(--ig-surface-500));
     height: max-content;
@@ -135,10 +91,6 @@
 .text_1 {
     height: max-content;
     min-width: min-content;
-}
-.list {
-    height: max-content;
-    flex-shrink: 0;
 }
 .badge {
     width: max-content;
