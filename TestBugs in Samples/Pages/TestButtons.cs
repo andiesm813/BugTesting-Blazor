@@ -15,11 +15,7 @@ namespace TestBugs_in_Samples
 				typeof(IgniteUI.Blazor.Controls.IgbButtonModule),
 				typeof(IgniteUI.Blazor.Controls.IgbRippleModule),
 				typeof(IgniteUI.Blazor.Controls.IgbDropdownModule),
-				typeof(IgniteUI.Blazor.Controls.IgbDropdownItemModule),
-				typeof(IgniteUI.Blazor.Controls.IgbListModule),
-				typeof(IgniteUI.Blazor.Controls.IgbAvatarModule),
-				typeof(IgniteUI.Blazor.Controls.IgbCardModule),
-				typeof(IgniteUI.Blazor.Controls.IgbIconButtonModule));
+				typeof(IgniteUI.Blazor.Controls.IgbDropdownItemModule));
 			var componentUnderTest = ctx.RenderComponent<Buttons>();
 			Assert.NotNull(componentUnderTest);
 		}
