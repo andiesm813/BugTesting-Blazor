@@ -1,0 +1,136 @@
+@page "/buttons"
+
+<div class="row-layout buttons-container">
+    <div class="row-layout group">
+        <div @onclick="@(e => Dropdown?.Toggle(Group))" @ref="Group" class="row-layout group_1">
+            <IgbButton class="button" buttons-scope>
+                Button
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbButton class="button" buttons-scope>
+                <span class="material-icons">
+                    add
+                </span>
+                <span>Button</span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbButton Variant="ButtonVariant.Outlined" class="button" buttons-scope>
+                Button
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbButton Variant="ButtonVariant.Outlined" class="button" buttons-scope>
+                <span class="material-icons">
+                    add
+                </span>
+                <span>Button</span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbButton Variant="ButtonVariant.Flat" class="button" buttons-scope>
+                Button
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbButton Variant="ButtonVariant.Flat" class="button" buttons-scope>
+                <span class="material-icons">
+                    add
+                </span>
+                <span>Button</span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbButton Variant="ButtonVariant.Flat" class="button" buttons-scope>
+                <span>With dropdown</span>
+                <span class="material-icons">
+                    keyboard_arrow_down
+                </span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbDropdown @ref="Dropdown" class="dropdown" buttons-scope>
+                <IgbDropdownItem>
+                    Option
+                </IgbDropdownItem>
+            </IgbDropdown>
+        </div>
+        <div class="row-layout group_2">
+            <IgbList class="list" buttons-scope>
+                <IgbListItem>
+                    <div slot="start">
+                        <IgbAvatar Shape="AvatarShape.Circle" class="avatar" buttons-scope>
+                            <span class="material-icons">person</span>
+                        </IgbAvatar>
+                    </div>
+                    <div slot="title">Title goes here</div>
+                    <div slot="subtitle">Subtitle...</div>
+                    <div>
+                        <IgbButton class="button_1" buttons-scope>
+                            Button
+                            <IgbRipple></IgbRipple>
+                        </IgbButton>
+                    </div>
+                    <div slot="end">
+                        <span class="material-icons icon">
+                            star
+                        </span>
+                    </div>
+                </IgbListItem>
+            </IgbList>
+            <IgbCard Outlined="true" class="card" buttons-scope>
+                <IgbCardHeader>
+                    <h3 slot="title">
+                        Card Title
+                    </h3>
+                    <h5 slot="subtitle">
+                        This is the card subtitle
+                    </h5>
+                </IgbCardHeader>
+                <IgbCardContent class="body-content" buttons-scope>
+                    <div class="column-layout group_3">
+                        <IgbButton class="button_1" buttons-scope>
+                            Button IN CONTENT
+                            <IgbRipple></IgbRipple>
+                        </IgbButton>
+                        <IgbButton Variant="ButtonVariant.Outlined" class="button_1" buttons-scope>
+                            BUTTON IN CONTENT
+                            <IgbRipple></IgbRipple>
+                        </IgbButton>
+                    </div>
+                </IgbCardContent>
+                <IgbCardActions class="actions-content" buttons-scope>
+                    <IgbButton Variant="ButtonVariant.Outlined" class="button_1" buttons-scope>
+                        Button
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                    <IgbIconButton Variant="IconButtonVariant.Flat" class="icon-button" buttons-scope>
+                        <span class="material-icons">
+                            favorite
+                        </span>
+                        <IgbRipple></IgbRipple>
+                    </IgbIconButton>
+                    <IgbIconButton Variant="IconButtonVariant.Flat" class="icon-button" buttons-scope>
+                        <span class="material-icons">
+                            share
+                        </span>
+                        <IgbRipple></IgbRipple>
+                    </IgbIconButton>
+                    <IgbButton class="button_1" buttons-scope>
+                        Button
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                </IgbCardActions>
+            </IgbCard>
+            <div class="column-layout group_3">
+                <IgbButton class="button_1" buttons-scope>
+                    Default dialog
+                    <IgbRipple></IgbRipple>
+                </IgbButton>
+                <IgbButton class="button_1" buttons-scope>
+                    Custom Dialog
+                    <IgbRipple></IgbRipple>
+                </IgbButton>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private div? Group;
+    private IgbDropdown? Dropdown;
+}

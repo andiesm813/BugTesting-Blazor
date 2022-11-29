@@ -3,7 +3,7 @@
 
 <div class="row-layout master-view-container">
     <IgbNavDrawer Open="true" Position="NavDrawerPosition.Relative" class="nav-drawer" master-view-scope>
-        <IgbNavDrawerItem>
+        <IgbNavDrawerItem @onclick="@(e => Navigate("buttons"))">
             <span slot="icon">
                 <span class="material-icons icon">
                     bug_report
