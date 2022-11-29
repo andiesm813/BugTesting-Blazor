@@ -58,7 +58,7 @@
     min-height: 50px;
 }
 .group_3 {
-    background-color: #893976;
+    background-color: #24272B;
     justify-content: flex-start;
     align-items: stretch;
     align-content: flex-start;
@@ -112,6 +112,11 @@
 }
 .content {
     color: hsla(var(--ig-surface-500));
+    height: max-content;
+    min-width: min-content;
+}
+.h6 {
+    color: hsla(var(--ig-secondary-300));
     height: max-content;
     min-width: min-content;
 }
