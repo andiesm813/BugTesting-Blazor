@@ -59,13 +59,13 @@
 .dropdown::part(base) {
     height: max-content;
 }
-.content {
+.h6 {
     color: hsla(var(--ig-surface-500));
     height: max-content;
     min-width: min-content;
 }
-.h6 {
-    color: hsla(var(--ig-secondary-300));
+.text {
+    color: hsla(var(--ig-gray-300));
     height: max-content;
     min-width: min-content;
 }

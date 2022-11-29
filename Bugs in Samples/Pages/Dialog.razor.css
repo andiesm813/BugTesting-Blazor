@@ -90,8 +90,13 @@
     height: max-content;
     min-width: min-content;
 }
-.content_1 {
+.h6 {
     color: hsla(var(--ig-surface-500));
+    height: max-content;
+    min-width: min-content;
+}
+.text {
+    color: hsla(var(--ig-gray-300));
     height: max-content;
     min-width: min-content;
 }
