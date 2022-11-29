@@ -3,7 +3,7 @@
 
 <div class="row-layout master-view-container">
     <IgbNavDrawer Open="true" Position="NavDrawerPosition.Relative" class="nav-drawer" master-view-scope>
-        <IgbNavDrawerItem @onclick="@(e => Navigate("buttons"))">
+        <IgbNavDrawerItem @onclick="@(e => Navigate(""))">
             <span slot="icon">
                 <span class="material-icons icon">
                     bug_report
@@ -12,7 +12,7 @@
             </span>
             <div slot="content">Buttons</div>
         </IgbNavDrawerItem>
-        <IgbNavDrawerItem @onclick="@(e => Navigate(""))">
+        <IgbNavDrawerItem @onclick="@(e => Navigate("space-between"))">
             <span slot="icon">
                 <span class="material-icons icon">
                     bug_report

@@ -1,7 +1,7 @@
-@page "/buttons"
+@page "/"
 
 <div class="row-layout buttons-container">
-    <div class="row-layout group">
+    <div class="column-layout group">
         <div class="row-layout buttons">
             <IgbButton class="button" buttons-scope>
                 Button
@@ -49,7 +49,70 @@
                 </IgbDropdownItem>
             </IgbDropdown>
         </div>
+        <div class="row-layout group_1">
+            <IgbList class="list" buttons-scope>
+                <IgbListItem>
+                    <div slot="start">
+                        <IgbAvatar Shape="AvatarShape.Circle" class="avatar" buttons-scope>
+                            <span class="material-icons">person</span>
+                        </IgbAvatar>
+                    </div>
+                    <div slot="title">Title goes here</div>
+                    <div slot="subtitle">Subtitle...</div>
+                    <div>
+                        <IgbButton class="button_1" buttons-scope>
+                            Button
+                            <IgbRipple></IgbRipple>
+                        </IgbButton>
+                    </div>
+                    <div slot="end">
+                        <span class="material-icons icon">
+                            star
+                        </span>
+                    </div>
+                </IgbListItem>
+            </IgbList>
+            <IgbCard Outlined="true" class="card" buttons-scope>
+                <IgbCardHeader>
+                    <h3 slot="title">
+                        Title goes here...
+                    </h3>
+                    <h5 slot="subtitle">
+                        Subtitle goes here...
+                    </h5>
+                </IgbCardHeader>
+                <IgbCardContent class="body-content" buttons-scope>
+                    <div class="column-layout group_2">
+                        <IgbButton class="button_1" buttons-scope>
+                            Button in content
+                            <IgbRipple></IgbRipple>
+                        </IgbButton>
+                        <IgbButton Variant="ButtonVariant.Outlined" class="button_1" buttons-scope>
+                            Button in content
+                            <IgbRipple></IgbRipple>
+                        </IgbButton>
+                    </div>
+                </IgbCardContent>
+                <IgbCardActions class="actions-content" buttons-scope>
+                    <IgbButton Variant="ButtonVariant.Flat" class="button_1" buttons-scope>
+                        Button
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                    <IgbButton class="button_1" buttons-scope>
+                        Button
+                        <IgbRipple></IgbRipple>
+                    </IgbButton>
+                </IgbCardActions>
+            </IgbCard>
+            <div class="column-layout group_2">
+                <IgbButton class="button_1" buttons-scope>
+                    Custom dialog
+                    <IgbRipple></IgbRipple>
+                </IgbButton>
+            </div>
+        </div>
     </div>
+    <span class="custom-dialog">Dialog not yet available in Blazor</span>
 </div>
 
 @code {
