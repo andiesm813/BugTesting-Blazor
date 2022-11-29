@@ -7,7 +7,7 @@
                 Button
                 <IgbRipple></IgbRipple>
             </IgbButton>
-            <IgbButton Variant="ButtonVariant.Flat" @onclick="@(e => Dropdown1?.Toggle(Button))" @ref="Button" class="button" space-between-scope>
+            <IgbButton Variant="ButtonVariant.Flat" @onclick="@(e => Dropdown1?.Toggle(Button1))" @ref="Button1" class="button" space-between-scope>
                 <span>With dropdown</span>
                 <span class="material-icons">
                     keyboard_arrow_down
@@ -56,6 +56,6 @@
 </div>
 
 @code {
-    private IgbButton? Button;
+    private IgbButton? Button1;
     private IgbDropdown? Dropdown1;
 }

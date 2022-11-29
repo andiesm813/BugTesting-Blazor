@@ -2,7 +2,7 @@
 
 <div class="row-layout buttons-container">
     <div class="row-layout group">
-        <div @onclick="@(e => Dropdown?.Toggle(Group))" @ref="Group" class="row-layout group_1">
+        <div class="row-layout buttons">
             <IgbButton class="button" buttons-scope>
                 Button
                 <IgbRipple></IgbRipple>
@@ -36,7 +36,7 @@
                 <span>Button</span>
                 <IgbRipple></IgbRipple>
             </IgbButton>
-            <IgbButton Variant="ButtonVariant.Flat" class="button" buttons-scope>
+            <IgbButton Variant="ButtonVariant.Flat" @onclick="@(e => Dropdown?.Toggle(Button))" @ref="Button" class="button" buttons-scope>
                 <span>With dropdown</span>
                 <span class="material-icons">
                     keyboard_arrow_down
@@ -53,6 +53,6 @@
 </div>
 
 @code {
-    private div? Group;
+    private IgbButton? Button;
     private IgbDropdown? Dropdown;
 }
